@@ -1,0 +1,22 @@
+{
+  "name": "rust-fel-bench",
+  "collaborators": [
+    "Torre Taylor"
+  ],
+  "description": "An example website utilizing rust-fel 'https://github.com/tostaylo/rust-fel'",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tostaylo/rust-fel-bench"
+  },
+  "files": [
+    "rust-fel-bench_bg.wasm",
+    "rust-fel-bench.js",
+    "rust-fel-bench.d.ts",
+    "LICENSE.txt"
+  ],
+  "module": "rust-fel-bench.js",
+  "types": "rust-fel-bench.d.ts",
+  "sideEffects": "false"
+}
