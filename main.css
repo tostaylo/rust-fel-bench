@@ -20,3 +20,9 @@ td {
 tr:nth-child(even) {
 	background: lightgray;
 }
+
+button {
+	height: 50px;
+	width: 75px;
+	background: black;
+}
