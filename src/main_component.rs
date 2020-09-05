@@ -28,9 +28,7 @@ impl rust_fel::Component for handle::Handle<Main> {
     type Message = Actions;
     type State = ();
 
-    fn add_props(&mut self, _props: Self::Properties) {
-        ()
-    }
+    fn add_props(&mut self, _props: Self::Properties) {}
 
     fn reduce_state(&mut self, message: Self::Message) {
         match message {
@@ -43,7 +41,7 @@ impl rust_fel::Component for handle::Handle<Main> {
     fn render(&self) -> rust_fel::Element {
         let mut clone = self.clone();
         let borrow = self.0.borrow_mut();
-        let state = borrow.state.clone();
+        let state = borrow.state;
         let mut el = None;
         if state {
             let mut main_table = rust_fel::html("<table></table>".to_owned());
